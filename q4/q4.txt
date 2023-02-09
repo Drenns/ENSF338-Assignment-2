@@ -1,0 +1,22 @@
+Arrays:
+
+    + Advantages +
+        -Simple to implement in most programming languages.
+        -Cache-Friendly, as they are stored in consecutive memory thus resulting in a faster access time.
+        -index-based accessing, makes it simple to read and accessed by just using the indicies of the array.
+            Accessing an element takes O(1) time to complete.
+
+    - Disadvantages -
+        -Fixed size once it is created. leading to memory wastage in some cases. Not properly modified code will lead to checking every index in the array.
+            
+
+
+
+Linked Lists:
+
+    + Advantages +
+        -
+
+    - Disadvantages -
+        -
+
