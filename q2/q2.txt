@@ -1,0 +1,11 @@
+1.
+The code receives an array, and two integers that are the first and last item in the array. 
+The code then utilizes a divide and conquer method to split the array in half and returns the index of the max value.
+
+2.
+
+3.
+
+4.
+
+5.
