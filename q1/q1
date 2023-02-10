@@ -1,0 +1,17 @@
+1.
+Memoization is a way of optimizing a search algorithm by storing previously found results for future use. 
+2. 
+Is the code
+3.
+The code calculates the Fibonacci sequence up to a specified number. For example an input of 5 would give the fifth fibonacci number (which also happens to be 5).
+4.
+No, as a divide-and-conquer algorithm depends on a set of data. The only input is a single integer that produces a certain number.
+5.
+The time complexity of the given code is 
+6.
+See ex1.3.py file
+7.
+The computational complexity of the updated file would be 
+8.
+Code and plotting shown in ex1.5.py file
+9.
