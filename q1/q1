@@ -15,3 +15,4 @@ The computational complexity of the updated file would be
 8.
 Code and plotting shown in ex1.5.py file
 9.
+The plot for the original code is as expected, which is O(x^2) and is easily seen. The plot for the changed function is much more consistent which is to be expected with the implementation of memoization for the function.

@@ -1,4 +1,5 @@
 import timeit
+from matplotlib import pyplot as plt
 
 def func(n, dict = {}):
     if n == 0 or n == 1:
@@ -19,16 +20,25 @@ def func_old(n):
 
 def new():
     for i in range(35):
-        func(i)
+        time = timeit.timeit(lambda:func(i), number=1)
+        new_times[i] = time
 
 def old():
     for i in range(35):
-        func_old(i)
+        time = timeit.timeit(lambda:func_old(i),number=1)
+        old_times[i] = time
 
 if __name__ == '__main__':
+    new_times = {}
+    old_times = {}
+    new()
+    old()
     time_new = timeit.timeit(new, number=1)
     time_old = timeit.timeit(old, number=1)
     print("The time it took for the new (updated) function was:", time_new)
     print("\nThe time it took for the old function was:", time_old)
-
-#not done
+    fig, axs = plt.subplots(2)
+    axs[0].scatter(new_times.keys(), new_times.values())
+    axs[0].set_title("Timing for changed function")
+    axs[1].scatter(old_times.keys(), old_times.values())
+    axs[1].set_title("Timing for original function")

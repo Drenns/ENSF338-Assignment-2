@@ -3,7 +3,7 @@ The code receives an array, and two integers that are the first and last item in
 The code then utilizes a divide and conquer method to split the array in half and returns the index of the max value.
 
 2.
-
+See file ex2.2.py
 3.
 
 4.
