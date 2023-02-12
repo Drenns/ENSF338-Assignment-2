@@ -31,8 +31,6 @@ def old():
 if __name__ == '__main__':
     new_times = {}
     old_times = {}
-    new()
-    old()
     time_new = timeit.timeit(new, number=1)
     time_old = timeit.timeit(old, number=1)
     print("The time it took for the new (updated) function was:", time_new)
