@@ -1,3 +1,6 @@
+Q4
+a)
+
 Arrays:
 
     + Advantages +
@@ -8,15 +11,70 @@ Arrays:
 
     - Disadvantages -
         -Fixed size once it is created. leading to memory wastage in some cases. Not properly modified code will lead to checking every index in the array.
-            
-
+        -Poor dynamic memory allocation, adding or removing elements requires shifting which is O(n) complexity for n elements.
 
 
 Linked Lists:
 
     + Advantages +
-        -
+        -Dynamic size, linked lists can increase and shrink when needed. More efficient than arrays in this regard.
+        -Insertion or deletion of elements in a linked list can be performed in O(1) complexity.
+            This does not require any shifting or reallocation of memory.
 
     - Disadvantages -
-        -
+        -Searching for an element in a linked list takes O(n) time. 
+
+
+b)
+We can create a single replace function that inserts the value into the index requested.
+This act of insertion deletes the element at that index so we dont have to shift the array at all.
+We check to see if the index is less than the length of the list, if it is we execute what was mentioned above, if it is not then the index is not in bounds 
+of the array and can't be inserted.
+
+This is a O(1) space and time complexity
+
+c)
+Selection Sort:
+    -Feasable-
+    traverses the linked list and finds the smallest element. This node has the head pointed to it and is deleted from its original place.
+    complexity is O(n^2)
+
+    does not differ between array and linked list as they both have to travers the entire list.
+
+Insertion Sort:
+    -Feasable-
+    Inserts elements into their correct position by updating pointers.
+    complexity is O(n^2)
+
+    does not differ, both is O(n^2)
+        differs when implemented, inserting into sorted sublist takes O(n) time while a linked lists pointers are O(1) to update.
+
+Merge Sort:
+    -Feasable-
+    Divide and conquer sort that divides the list into smaller sublists recursively. Use a fast and slow pointer to find the mid point.
+    complexity is O(n * log n)
+
+    does not differ from an array
+
+Bubble Sort:
+    -FEASIBLE but not efficient-
+    Swapping adjacent entries to order them and goes through all n elements in a linked list
+    complexity is O(n^2)
+
+    does not differ from an array
+
+Quick Sort:
+    -FEASIBLE-
+    Divide and conquer technique, picking a pivot element and splitting the linked list into two parts. Traverse linked list and place elemnts 
+    that are less than the partition to the left. After recursively sort these two lists.  
+    complexity is O(nlogn) when the partition is not the highest or lowest value in the list. if this is the case 
+    the complexity becomes O(n^2)
+
+    does not differ in time complexity of an array
+
+
+
+
+
+
 
