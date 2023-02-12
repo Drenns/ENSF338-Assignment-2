@@ -1,0 +1,47 @@
+1. 
+    a)
+        Because the stack is a last in first out (LIFO) structure.
+        By inserting items at the top of the stack, it can be ensured that the newest items will be at the top,
+        and removed first.
+
+    b)
+        Yes data can be added to the end of the stack.
+
+    c)
+        pushing (insertion) and popping are O(1)
+
+2.
+    a)
+        This is to add elements to the end as it is a FIFO structure. The tail now acts as the 'head' and is the front of the line.
+    
+    b)
+        yes, but it is inefficient as you have to traverse the entire linked list to find the end in order to insert.
+        which is O(n)
+
+    c)
+        without tail:
+            enqueuing is O(n) compared to O(1) with tail.
+            dequeuing is the same as it still has a head pointer. O(1) complexity.
+
+3.
+    a1)
+        LIFO structure for a stack is LIFO. And is added at the head as the head keeps track of the Last in First out element. 
+    
+    b1)
+        no you can not add data to the end of the stack in this case. 
+
+    c1)
+
+    a2)
+        
+    b2)
+
+    c2)
+    
+
+
+    
+
+        
+    
+
