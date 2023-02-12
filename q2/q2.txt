@@ -1,0 +1,19 @@
+1.
+The code represents a Quick Sort implementation to sort through data, which is done through use of a divide-and-conquer method. In short, the 
+data is sorted by having a pivot that data is checked against, and then the data gets switched to the proper side by going through the array.
+The average-case complexity would roughly be based on having to sort only half the data, as the worst case scenario would be if the data was 
+completely out of order while the best case scenario would be already sorted. Taking this into account, the average-case complexity would be
+O(log(n)) as the algorithm splits and handles each section of data and upon each split the data becomes half the size. The best case scenario
+would be the data being already sorted as zero exchanges of data would need to happen, and as a result the complexity would be O(n). 
+The worst case scenario would be having a completely out-of-order dataset and the complexity would be O(n^2).
+2.
+See file ex2.2.py
+3.
+The result is relatively consistent, as the values are all in the hundreths of a second and the highest of values is still less than five hundredths
+of a second. 
+4.
+The Quick Sort is already fairly optimized as it properly handles all cases of data (whether the data is fully organized, slightly disorganized,
+or completely disorganized). 
+5.
+Mostly sorted data is good as it reduces the amount of back-and-forth the algorithm has to do with placing values, so there is little that needs
+to be changed.
