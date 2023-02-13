@@ -1,11 +1,11 @@
 1.
-If the data is sorted and uniformly distributed, it is faster than binary search.
+If the data is sorted and uniformly distributed, it is faster than binary search. If the data set is smaller, it is also less complex and accomplishes the same task in a small amount of time.
 2.
-Yes the search will be affected, as it would become more difficult and time-consuming on one end compared to another. Take, for example, a data set based on phone books. If you were searching for a D name and had a large amount of E names and started closer to the beginning of the book, it would take you much longer than if it were uniformly distributed. It would be a similar effect if the ends had higher density, as it would be take a longer time to get a name within those areas.
+Yes the search will be affected, as it would become more difficult and time-consuming on one end compared to another. Take, for example, a data set based on phone books. If you were searching for a E name and had a large amount of D names and started closer to the beginning of the book, it would take you much longer than if it were uniformly distributed. It would be a similar effect if the ends had higher density, as it would be take a longer time to get a name within those areas.
 3.
-The part of the code that would be affected would be the while loop, as it would have to be coded to take into account the different distribution. 
+The part of the code that would be affected would be the while loop, as it would have to be coded to take into account the different distribution. This could involve something like changing the pos variable calculation in order to find a better position to start with. This could also involve changing the if and else statements underneath the pos variable, as the change in distribution would potentially make it harder to accomplish the needed task if you only increment by one each time. 
 4.
 a.
-Linear search is your only option when the data you're given is not sorted in any way.
+Linear search is your only option when the data you're given is not sorted in any way, or in a way that is inefficient for binary search. It's also more useful when it comes to smaller sets of data, as the amount of work it takes to split up a small dataset can be accomplished in a similar time as with just plain linear search.
 b.
 As both Binary and Interpolation search require the data to be sorted in order to work properly, using divide-conquer would be unpredictable with data being in any position. A case where Linear would outperform Interpolation and Binary search would be any case where the data is unsorted beforehand, such as a list of license plates where you need to find a specific one. I don't believe there's any way to solve this for both Binary or Interpolation search, as they both hinge on the idea of sorted data with how they search through and without a sorted data, the process would not be consistent. 

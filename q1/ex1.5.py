@@ -40,3 +40,4 @@ if __name__ == '__main__':
     axs[0].set_title("Timing for changed function")
     axs[1].scatter(old_times.keys(), old_times.values())
     axs[1].set_title("Timing for original function")
+    plt.show()

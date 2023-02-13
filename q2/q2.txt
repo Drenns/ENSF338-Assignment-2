@@ -3,17 +3,23 @@ The code represents a Quick Sort implementation to sort through data, which is d
 data is sorted by having a pivot that data is checked against, and then the data gets switched to the proper side by going through the array.
 The average-case complexity would roughly be based on having to sort only half the data, as the worst case scenario would be if the data was 
 completely out of order while the best case scenario would be already sorted. Taking this into account, the average-case complexity would be
-O(log(n)) as the algorithm splits and handles each section of data and upon each split the data becomes half the size. The best case scenario
-would be the data being already sorted as zero exchanges of data would need to happen, and as a result the complexity would be O(n). 
-The worst case scenario would be having a completely out-of-order dataset and the complexity would be O(n^2).
+O(n log(n)) as the algorithm splits and handles each section of data and upon each split the data becomes half the size. The best case scenario
+would be when the pivots always make equal sized subarrays resulting in a tree with log(n) levels. This would also be of complexity O(n log(n)) 
+The worst case scenario would be having the smallest or largest as the pivot for the array and subsequent subarrays and the complexity would
+be O(n^2).
+
 2.
 See file ex2.2.py
 3.
 The result is relatively consistent, as the values are all in the hundreths of a second and the highest of values is still less than five hundredths
-of a second. 
+of a second. The consistency can be attributed to Quick Sort, as the data sets are relatively similar in how they're ascending in order from
+lowest to highest.
 4.
-The Quick Sort is already fairly optimized as it properly handles all cases of data (whether the data is fully organized, slightly disorganized,
-or completely disorganized). 
+The Quick Sort is fairly good already, as it properly organizes the data as needed and handles data ranging from 1000 data points to 10000. However
+by using the first data point as the pivot, the worst case scenario will be when the data is already sorted or mostly sorted which is true for our
+data. This results in subarrays where one side is vastly larger than the other. A solution to this would be to utilize a pivot somewhere in between
+the first and last entry which is shown in the ex2.4.py.
 5.
-Mostly sorted data is good as it reduces the amount of back-and-forth the algorithm has to do with placing values, so there is little that needs
-to be changed.
+Sorted data is good as it reduces the amount of back-and-forth the sort has to do with placing values, so there is little that needs
+to be changed. In the case of question 4, it can be changed to be random in order to be fully utilized with having the pivot be the first index,
+but with the changes in question 4 either way should yield similar results. 
