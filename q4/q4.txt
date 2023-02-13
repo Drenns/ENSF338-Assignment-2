@@ -43,7 +43,7 @@ Selection Sort:
 
 Insertion Sort:
     -Feasable-
-    Inserts elements into their correct position by updating pointers.
+    Inserts elements into their correct position by updating pointers. Can use an empty linked lsit and adds the smallest data node to the head and then continues to find the next smallest node.
     complexity is O(n^2)
 
     does not differ, both is O(n^2)
