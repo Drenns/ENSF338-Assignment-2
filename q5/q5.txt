@@ -5,14 +5,14 @@
         and removed first.
 
     b)
-        Yes data can be added to the end of the stack.
+        Yes data can be added to the end of the stack this is done by traversing the whole linked list and updating the pointers.
 
     c)
         pushing (insertion) and popping are O(1)
 
 2.
     a)
-        This is to add elements to the end as it is a FIFO structure. The tail now acts as the 'head' and is the front of the line.
+        This is to add elements to the end as it is a FIFO structure. The tail now acts as the 'head' as new data comes here, while old data is discarded. FIFO (grocery store line)
     
     b)
         yes, but it is inefficient as you have to traverse the entire linked list to find the end in order to insert.
@@ -20,24 +20,35 @@
 
     c)
         without tail:
+            not possible because we add data at the end of the memory data.
+            but we could go throgh the entire list and find the end and add.
             enqueuing is O(n) compared to O(1) with tail.
             dequeuing is the same as it still has a head pointer. O(1) complexity.
-
+    d)
+        When adding elements to the front of a linked list (enqueueing) and removing elements from the end of the list (dequeuing), it's not efficient to use the head and tail pointers respectively.
+        This is because when we remove an element from the end of the list, we need to change the next pointer of the previous element to point to nothing. This requires iterating through the entire list, making the code more complex and less efficient
 3.
     a1)
-        LIFO structure for a stack is LIFO. And is added at the head as the head keeps track of the Last in First out element. 
+        LIFO structure for a stack and data is added at the head as the head keeps track of the Last in First out element. 
     
     b1)
-        no you can not add data to the end of the stack in this case. 
+        insertion of data at the end of the circular list can happen because access of the last node is available.
 
     c1)
+        insertion and popping would be O(1) as we have head and tail pointers to eacb element. If we knew the element (first or last) we can simply update pointers.
 
     a2)
+        data is enqueued at the tail of a FIFO structure
         
     b2)
-
+        yes, we can access the last node beczasue we have a pointer from the end to start. This makes it circular.
     c2)
-    
+        It is the same complecity as enqueuing and dequeuing.
+
+    d2)
+        it would be possible and a preferred method as we can access previous and next nodes with ease.
+        
+
 
 
     
